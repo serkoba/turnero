@@ -47,3 +47,21 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+
+function ClickNewTurno(objText)
+{
+    var stringUri = "http://bahiatransporte.com.ar/turnos/turnero.php?pass=conchaprofunda&id=" + $("#slcSucursal").val() + "&accion=1&valor=";
+    $.getJSON(stringUri, function (data) {
+        $.each(data, function (i, item) {
+            if (i == 'turno') {
+                objText.fadeOut(100, function () {
+                    objText.text(item).fadeIn(100);
+                });
+            }
+        });
+
+    });
+}
+
+
+
