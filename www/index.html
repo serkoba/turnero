@@ -68,9 +68,13 @@
             <option value="8">Sociedad de Fomento B° Victoria Sinclair</option>
         </select>
         </div>
-        <ul>
-            <li><a href="#" id="btnClickTurno" class="round red">Siguiente Turno</a></li>
-        </ul>
+        <div id="VerticalAlighDiv">
+            <ul>
+                <li><a href="#" id="btnClickTurno" class="round red">Siguiente Turno</a></li>
+                <li><a href="#" id="btnClickReset" class="round red">Resetear a 0</a></li>
+                <li><a href="#" id="btnClickSubTurno" class="round red">Restar Turno</a></li>
+            </ul>
+        </div>
         <div class="col-xs-6 col-md-3">
             <div class="divCenter">
                 <blockquote class="quote-box">
@@ -98,6 +102,14 @@
     <script>
         $("#btnClickTurno").click(function () {
             ClickNewTurno($('#textTurnero'));
+
+        });
+        $("#btnClickReset").click(function () {
+            ClickResetTurno($('#textTurnero'));
+
+        });
+        $("#btnClickSubTurno").click(function () {
+            ClickSubTurno($('#textTurnero'));
 
         });
     </script>

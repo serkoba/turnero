@@ -134,6 +134,7 @@ h1 {
 	ul {
 		margin: 30px auto;
 		text-align: center;
+        width:344px;
 	}
 
 	li {
@@ -143,6 +144,10 @@ h1 {
 		width: 100px;
 		height: 100px;
 	}
+
+
+
+
 
 	@-moz-keyframes rotate {
 		0% {transform: rotate(0deg);}
@@ -346,4 +351,9 @@ h1 {
    border-radius: 9px 9px 9px 9px;
    box-shadow: 1px 1px 11px #330033;
    background: #4ADFCC url("http://i62.tinypic.com/15xvbd5.png") no-repeat scroll 319px center;
+}
+#VerticalAlighDiv {
+    display:inline;
+    width:100%;
+    height:100%;
 }
